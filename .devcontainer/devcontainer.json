@@ -11,6 +11,9 @@
                 "python.pythonPath": "/usr/local/bin/python"
             }
         }
-    }
-
+    },
+    "mounts": [
+        "source=${localWorkspaceFolder}/src,target=/nfl/src,type=bind",
+        "source=nfl-data,target=/nfl/data,type=volume"
+    ]
 }
