@@ -8,8 +8,17 @@
     "customizations": {
         "vscode": {
             "settings": {
-                "python.pythonPath": "/usr/local/bin/python"
-            }
+                "python.pythonPath": "/usr/local/bin/python",
+                "python.formatting.provider": "ruff",
+                "python.linting.mypyEnabled": true,
+                "python.linting.enabled": true
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "streetsidesoftware.code-spell-checker",
+                "ms-toolsai.jupyter"
+            ]
         }
     },
     "mounts": [
