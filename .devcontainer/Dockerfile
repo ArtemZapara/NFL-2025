@@ -13,6 +13,3 @@ ENV EXTRACT_PATH=${DOWNLOAD_PATH}/${COMPETITION_NAME}
 
 COPY /secrets/kaggle.json ${KAGGLE_CONFIG_DIR}/kaggle.json
 RUN chmod 600 ${KAGGLE_CONFIG_DIR}/kaggle.json
-
-COPY src/ src/
-RUN bash src/download.sh

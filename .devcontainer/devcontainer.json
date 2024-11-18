@@ -15,5 +15,6 @@
     "mounts": [
         "source=${localWorkspaceFolder}/src,target=/nfl/src,type=bind",
         "source=nfl-data,target=/nfl/data,type=volume"
-    ]
+    ],
+    "postStartCommand": "bash src/download.sh"
 }
