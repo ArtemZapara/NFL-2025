@@ -10,7 +10,7 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument(
         "--output_dir",
         type=str,
-        default="./src/resources",
+        default="/nfl/src/resources",
         help="Directory to save the image"
     )
     parser.add_argument(
