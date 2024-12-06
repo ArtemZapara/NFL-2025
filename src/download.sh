@@ -21,3 +21,16 @@ else
     echo "Extracting competition data..."
     unzip -o ${ZIP_FILE} -d ${EXTRACT_DIR}
 fi
+
+
+if [[ ! -d "$FONT_DIR" ]]; then
+    echo "Creating font directory at $FONT_DIR..."
+    mkdir -p "$FONT_DIR"
+fi
+
+if [[ ! -f "$FONT_DIR/$FONT_NAME" ]]; then
+    echo "Downloading font from $FONT_URL..."
+    curl -sSfL "$FONT_URL" -o "$FONT_DIR/$FONT_NAME"
+else
+    echo "Font $FONT_NAME already exists in $FONT_DIR. Skipping download."
+fi
