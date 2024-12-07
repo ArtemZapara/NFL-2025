@@ -1,4 +1,5 @@
 #!/bin/bash
+# cSpell: words Kaggle
 
 ZIP_FILE="${DOWNLOAD_PATH}/${COMPETITION_NAME}.zip"
 EXTRACT_DIR="${EXTRACT_PATH}"

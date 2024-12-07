@@ -45,14 +45,14 @@ def draw(path: Path):
     plotting.plot_annotations(fig)
     plotting.plot_border(fig)
 
-    fig.update_xaxes(
+    fig.update_xaxes(    # cSpell: disable-line
         range=[
             -constants.FIELD_MARGIN,
             constants.FIELD_LENGTH + constants.FIELD_MARGIN
         ],
         visible=True,
     )
-    fig.update_yaxes(
+    fig.update_yaxes(    # cSpell: disable-line
         range=[
             -constants.FIELD_MARGIN,
             constants.FIELD_WIDTH + constants.FIELD_MARGIN
